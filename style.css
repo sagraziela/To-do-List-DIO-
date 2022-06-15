@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(177, 225, 255);
+    margin: 30px auto;
+}
+
+#taskWrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: line;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px auto;
+}
+
+#task {
+  height: 40px;
+  width: 300px;
+  border-radius: 5px;
+  padding: 1px;
+  margin: 0;
+}
+
+#addbtn {
+    height: 40px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 2px solid blue;
+    background-color: rgb(253, 165, 0);
+    color: black;
+    font-size: 16pt;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#addbtn:hover {
+  box-shadow: 2px 2px 1px blue;
+  font-size: 16.5pt;
+  cursor: pointer;
+}
+
+#taskList {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  
+}
+
+.item {
+  list-style: none;
+  height: 30px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14pt;
+  border-bottom: 1px solid rgb(253, 165, 0);
+  padding: 24px;
+}
+
+span {
+  margin: auto 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.chbox {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  cursor: pointer;
+}
+
+.marked {
+  text-decoration: line-through;
+}
+
+.removebtn {
+  background-color: rgb(255, 51, 0);
+  color: #ffff;
+  font-weight: bold;
+  font-size: 10px;
+  border-radius: 5px;
+  height: max-content;
+  border: none;
+  margin-top: 3px;
+  padding: 4px;
+}
+
+.removebtn:hover {
+  background-color: rgb(255, 51, 0);
+  font-size: 10.5px;
+  cursor: pointer;
+}
